@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/counter_on_redux/static/css/main.3ad4819f.chunk.css",
+    "main.js": "/counter_on_redux/static/js/main.6b0c2a48.chunk.js",
+    "main.js.map": "/counter_on_redux/static/js/main.6b0c2a48.chunk.js.map",
+    "runtime-main.js": "/counter_on_redux/static/js/runtime-main.63727fae.js",
+    "runtime-main.js.map": "/counter_on_redux/static/js/runtime-main.63727fae.js.map",
+    "static/js/2.98d6b1aa.chunk.js": "/counter_on_redux/static/js/2.98d6b1aa.chunk.js",
+    "static/js/2.98d6b1aa.chunk.js.map": "/counter_on_redux/static/js/2.98d6b1aa.chunk.js.map",
+    "static/js/3.6c4f8263.chunk.js": "/counter_on_redux/static/js/3.6c4f8263.chunk.js",
+    "static/js/3.6c4f8263.chunk.js.map": "/counter_on_redux/static/js/3.6c4f8263.chunk.js.map",
+    "index.html": "/counter_on_redux/index.html",
+    "static/css/main.3ad4819f.chunk.css.map": "/counter_on_redux/static/css/main.3ad4819f.chunk.css.map",
+    "static/js/2.98d6b1aa.chunk.js.LICENSE.txt": "/counter_on_redux/static/js/2.98d6b1aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63727fae.js",
+    "static/js/2.98d6b1aa.chunk.js",
+    "static/css/main.3ad4819f.chunk.css",
+    "static/js/main.6b0c2a48.chunk.js"
+  ]
+}
