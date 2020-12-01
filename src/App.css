@@ -1,13 +1,13 @@
 .app {
-  width: 900px;
-  height: 500px;
+  width: 750px;
+  height: 295px;
   margin: 0 auto;
-  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 5px solid white;
   border-radius: 4px;
+  margin-top: 13%;
 }
 
 .app__settings {
@@ -37,9 +37,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #282c34;
-  color: white;
+  background-color: white;
+  color: #282c34;
   font-weight: bold;
+  font-size: 23px;
   border-radius: 4px;
   cursor: pointer;
 }

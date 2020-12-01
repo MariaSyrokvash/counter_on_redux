@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Counter from './Counter';
-import {IncrementAC, ResetAC, setLocalStorageAC} from '../../redux/counterReducer';
+import {IncrementAC, ResetAC} from '../../redux/counterReducer';
 
 
 // type mapStateToPropsType = {
@@ -15,6 +15,7 @@ import {IncrementAC, ResetAC, setLocalStorageAC} from '../../redux/counterReduce
 // 	errorMessage: string
 // }
 
+
 const mapStateToProps = (state: any) => {
 	return {
 		counterValue: state.counter.counterValue,
@@ -27,7 +28,7 @@ const mapStateToProps = (state: any) => {
 		errorMessage: state.counter.errorMessage
 	}
 }
-
+console.log(mapStateToProps)
 
 const mapDispatchToProps = (dispatch: any) => {
 	return {
@@ -36,9 +37,6 @@ const mapDispatchToProps = (dispatch: any) => {
 		},
 		reset: () => {
 			dispatch(ResetAC())
-		},
-		setLocalStorage: (valueMin: number, valueMax: number) => {
-			dispatch(setLocalStorageAC(valueMin, valueMax))
 		}
 	}
 }

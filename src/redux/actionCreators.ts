@@ -1,7 +1,7 @@
 import {
 	DisabledIncResetAC,
 	IncrementAC,
-	ResetAC, setErrorAC, setErrorMessageAC, setLocalStorageAC,
+	ResetAC, setErrorAC, setErrorMessageAC,
 	SetMaxValueAC, setMessageAC,
 	SetMinValueAC,
 	SetMinValueToCounterAC
@@ -16,7 +16,6 @@ type DisabledIncResetType = ReturnType<typeof DisabledIncResetAC>
 type setErrorMessageType = ReturnType<typeof setErrorMessageAC>
 type setErrorType = ReturnType<typeof setErrorAC>
 type setMessageType = ReturnType<typeof setMessageAC>
-type setLocalStorageType = ReturnType<typeof setLocalStorageAC>
 
 export type ActionsType =
 	IncrementActionType
@@ -28,4 +27,3 @@ export type ActionsType =
 	| setErrorType
 	| setMessageType
 	| setErrorMessageType
-	| setLocalStorageType

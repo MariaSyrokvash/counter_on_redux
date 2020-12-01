@@ -12,20 +12,12 @@ type CounterPropsType = {
 	message: string
 	error: boolean
 	errorMessage: boolean
-	setLocalStorage: (valueMin: number, valueMax: number) => void
-
 }
 
 const Counter = (props: CounterPropsType) => {
 	const increment = () => { props.increment() }
 	const reset = () => { props.reset() }
 
-	const minValue = localStorage.getItem('valueMin')
-	const maxValue = localStorage.getItem('valueMax')
-
-	if (Number(minValue) && Number(maxValue)) {
-		props.setLocalStorage(Number(minValue), Number(maxValue));
-	}
 
 	return (
 		<div className='counter'>

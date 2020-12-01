@@ -9,7 +9,6 @@ const SET_DISABLE_INC_RESET = 'SET_DISABLE_INC_RESET'
 const SET_ERROR_MESSAGE = 'SET_ERROR_MESSAGE'
 const SET_ERROR = 'SET_ERROR'
 const SET_MESSAGE = 'SET_MESSAGE'
-const SET_LOCAL_STORAGE = 'SET_LOCAL_STORAGE'
 
 export const IncrementAC = () => ({ type: INCREMENT } as const)
 export const ResetAC = () => ({ type: RESET } as const)
@@ -20,7 +19,6 @@ export const DisabledIncResetAC = (disableBtnInc: boolean, disableBtnReset: bool
 export const setErrorMessageAC = (errorMessage: string) => ({ type: SET_ERROR_MESSAGE, errorMessage } as const)
 export const setErrorAC = (error: boolean, disableBtnSet: boolean) => ({ type: SET_ERROR, error, disableBtnSet } as const)
 export const setMessageAC = (message: string) => ({ type: SET_MESSAGE, message } as const)
-export const setLocalStorageAC = (valueMin: number, valueMax: number) => ({ type: SET_LOCAL_STORAGE, valueMin, valueMax } as const)
 
 
 export type initialStateType = {
@@ -107,12 +105,6 @@ export const counterReducer = (state: initialStateType = initialState, action: A
 					error: action.error,
 					disableBtnSet: action.disableBtnSet,
 				}
-		case SET_LOCAL_STORAGE:
-			return {
-				...state,
-				minValue: action.valueMin,
-				maxValue: action.valueMax
-			}
 		default:
 			return state
 	}

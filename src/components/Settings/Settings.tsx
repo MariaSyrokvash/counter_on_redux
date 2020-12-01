@@ -16,7 +16,6 @@ type SettingsPropsType = {
 	setError: (error: boolean, disableBtnSet: boolean) => void
 	error: boolean
 	message: string
-	setLocalStorage: (valueMin: number, valueMax: number) => void
 }
 
 const Settings = (props: SettingsPropsType) => {
@@ -48,12 +47,7 @@ const Settings = (props: SettingsPropsType) => {
 
 	const setMinValueToCounterValue = () => {
 		props.setMinValueToCounterValue(props.minValue, props.disableBtnSet, props.disableBtnInc, props.disableBtnReset)
-
-		localStorage.setItem('valueMin', String(props.minValue));
-		localStorage.setItem('valueMax', String(props.maxValue));
 	}
-
-
 
 	return (
 		<div className="settings">

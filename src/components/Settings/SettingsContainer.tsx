@@ -4,7 +4,7 @@ import Settings from './Settings';
 import {connect} from 'react-redux';
 import {
 	setErrorAC,
-	setErrorMessageAC, setLocalStorageAC,
+	setErrorMessageAC,
 	SetMaxValueAC, setMessageAC,
 	SetMinValueAC,
 	SetMinValueToCounterAC
@@ -45,9 +45,6 @@ const mapDispatchToProps = (dispatch: any) => {
 		},
 		setError: (error: boolean, disableBtnSet: boolean) => {
 			dispatch(setErrorAC(error, disableBtnSet))
-		},
-		setLocalStorage: (valueMin: number, valueMax: number) => {
-			dispatch(setLocalStorageAC(valueMin, valueMax))
 		}
 	}
 }
