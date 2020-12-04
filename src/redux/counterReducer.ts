@@ -21,19 +21,19 @@ export const setErrorAC = (error: boolean, disableBtnSet: boolean) => ({ type: S
 export const setMessageAC = (message: string) => ({ type: SET_MESSAGE, message } as const)
 
 
-export type initialStateType = {
-	counterValue: number
-	minValue: number
-	maxValue: number
-	disableBtnSet: boolean
-	disableBtnReset: boolean
-	disableBtnInc: boolean
-	errorMessage: string
-	message: string
-	error: boolean
-}
+// export type initialStateType = {
+// 	counterValue: number
+// 	minValue: number
+// 	maxValue: number
+// 	disableBtnSet: boolean
+// 	disableBtnReset: boolean
+// 	disableBtnInc: boolean
+// 	errorMessage: string
+// 	message: string
+// 	error: boolean
+// }
 
-const initialState: initialStateType = {
+const initialState = {
 	counterValue: 0,
 	minValue: 0,
 	maxValue: 5,
@@ -44,6 +44,9 @@ const initialState: initialStateType = {
 	message: '',
 	error: false
 }
+
+type initialStateType = typeof initialState
+
 
 console.log(initialState.error)
 

@@ -26,10 +26,11 @@ function loadFromLocalStorage() {
 export type AppStateType = ReturnType<typeof reducers>
 
 
-const reducers: any = combineReducers({
+const reducers = combineReducers({
 	counter: counterReducer
 });
 
-export const store: AppStateType = createStore(reducers, loadFromLocalStorage())
+
+export const store = createStore(reducers, loadFromLocalStorage())
 
 store.subscribe(() => saveToLocalStorage(store.getState()));

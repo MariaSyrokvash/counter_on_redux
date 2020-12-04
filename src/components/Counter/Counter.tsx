@@ -15,14 +15,22 @@ type CounterPropsType = {
 }
 
 const Counter = (props: CounterPropsType) => {
-	const increment = () => { props.increment() }
-	const reset = () => { props.reset() }
+	const increment = () => {
+		props.increment()
+	}
+	const reset = () => {
+		props.reset()
+	}
 
 
 	return (
 		<div className='counter'>
-			<p className={props.counterValue === props.maxValue  ? 'counterValueMax' : 'counterValue'}>
-				{ props.error ? props.errorMessage : props.disableBtnInc ? props.message : props.counterValue }
+			<p className={props.counterValue === props.maxValue ? 'counterValueMax' : 'counterValue'}>
+				{props.error
+					? props.errorMessage
+					: props.disableBtnInc
+						? props.message
+						: props.counterValue}
 			</p>
 			<div className='app__btn-box'>
 
@@ -30,7 +38,8 @@ const Counter = (props: CounterPropsType) => {
 				{/*<Button title='reset' />*/}
 
 				<button className={'button'} onClick={increment}
-								disabled={props.counterValue < props.maxValue || props.error ? props.disableBtnInc : !props.disableBtnInc}>INC</button>
+								disabled={props.counterValue < props.maxValue || props.error ? props.disableBtnInc : !props.disableBtnInc}>INC
+				</button>
 				<button className={'button'} onClick={reset} disabled={props.disableBtnReset}>RESET</button>
 			</div>
 		</div>

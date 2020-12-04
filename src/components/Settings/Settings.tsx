@@ -22,7 +22,7 @@ const Settings = (props: SettingsPropsType) => {
 
 	const changeMinValue = (event: ChangeEvent<HTMLInputElement>) => {
 		props.setMessage('enter values and press SET')
-		const value = +event.currentTarget.value;
+		const value = event.currentTarget.valueAsNumber;
 		props.setMinValue(value, false, true, true)
 
 		const maxValue  =  props.maxValue;

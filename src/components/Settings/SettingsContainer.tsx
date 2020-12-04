@@ -9,11 +9,13 @@ import {
 	SetMinValueAC,
 	SetMinValueToCounterAC
 } from '../../redux/counterReducer';
+import {AppStateType} from '../../redux/store';
+import {Dispatch} from 'redux';
 
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = (state: AppStateType) => {
 	return {
-		counterValue: state.counterValue,
+		counterValue: state.counter.counterValue,
 		minValue: state.counter.minValue,
 		maxValue: state.counter.maxValue,
 		disableBtnSet: state.counter.disableBtnSet,
@@ -25,7 +27,7 @@ const mapStateToProps = (state: any) => {
 }
 
 
-const mapDispatchToProps = (dispatch: any) => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
 	return {
 		setMinValue: (valueMin: number, disableBtnSet: boolean, disableBtnInc: boolean, disableBtnReset: boolean) => {
 			dispatch(SetMinValueAC(valueMin, disableBtnSet, disableBtnInc, disableBtnInc))

@@ -4,18 +4,12 @@
     <list default="true" id="41e3db48-a683-428b-b249-75f1e8d7b62e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter/CounterContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter/CounterContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Settings/SettingsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/SettingsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionCreators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/counterReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/counterReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606820771294</updated>
       <workItem from="1606820776074" duration="484000" />
-      <workItem from="1606821378484" duration="2006000" />
+      <workItem from="1606821378484" duration="2185000" />
+      <workItem from="1607081632048" duration="576000" />
+      <workItem from="1607083249830" duration="2121000" />
     </task>
     <servers />
   </component>
